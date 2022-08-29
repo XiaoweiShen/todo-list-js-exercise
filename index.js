@@ -1,3 +1,13 @@
+function newTask(title, description) {
+  const task = {
+    title: title,
+    description: description,
+    complete: false
+  };
+  return task;
+}
+
+
 // prints out the provided task's details
 function logTaskState(task) {
   console.log(`${task.title} has${task.complete ? " " : " not "}been completed`);
